@@ -1,0 +1,17 @@
+package App;
+
+
+public class Infrastruktur extends Bauwerk {            //Diese Klasse erbt von der Oberklasse Bauwerk 
+	
+	private int maximaleEinwohner;
+	private int aktuelleEinwohner;
+	private int erwartungen;
+	
+	public int spielrunde( int gesamtQualität) {
+		return gesamtQualität;
+	}
+	
+	
+		
+		
+}
