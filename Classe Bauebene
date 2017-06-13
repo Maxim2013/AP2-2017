@@ -1,0 +1,23 @@
+package App;
+
+import java.util.*;
+
+
+public class Bauebene {
+	
+	private ArrayList Bauwerken = new ArrayList();
+	private int anzahl_freien_Slots;
+	
+	
+	public Bauebene(int anzahl_freien_Slots) {
+		super();
+		this.anzahl_freien_Slots = anzahl_freien_Slots;
+	}
+	
+	public void bauwerkEinfuegen (Bauwerk b) {
+		Bauwerken.add(b);
+	}
+	
+	
+
+}
