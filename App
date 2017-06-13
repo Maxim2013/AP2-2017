@@ -1,0 +1,38 @@
+package App;
+import java.util.*;
+
+public class App {
+	
+	int runden;
+	static String e;
+	boolean running = true;
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		while (running){
+		
+		System.out.println("e: = Exit 1:Hoch 2: Runter");
+		System.out.println("Ebenen bauen: k: kleine  m: mittlere g:  große");
+		System.out.println("Bauwerke bauen: h: Hochhaus v: Villa s:Supermarkt p: Park");
+		
+		e = scan.nextLine();
+		
+		switch (e){
+		"1":
+		break;
+		
+		"e";
+		running =! running;
+		break;
+		
+		}
+		
+		
+		}
+		
+		
+	}
+
+}
