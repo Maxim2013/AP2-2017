@@ -1,0 +1,55 @@
+package App;
+
+import java.util.ArrayList;
+
+public class City {
+	
+	private ArrayList  Bauebenen = new ArrayList();
+	
+	private int index;
+	private double aktuelles_guthaben;
+	
+	public City(ArrayList bauelemente, int index, double aktuelles_guthaben) //das ist der Konstruktor 
+	{
+		super();
+		Bauebenen = bauelemente;
+		this.index = index;
+		this.aktuelles_guthaben = aktuelles_guthaben;
+	}
+	
+	
+
+	public ArrayList getBauebenen() {
+		return Bauebenen;
+	}
+
+	public void setBauebenen(ArrayList bauelemente) {
+		Bauebenen = bauelemente;
+	}
+
+	public int getIndex() {
+		return index;
+	}
+
+	public void setIndex(int index) {
+		this.index = index;
+	}
+
+	public double getAktuelles_guthaben() {
+		return aktuelles_guthaben;
+	}
+
+	public void setAktuelles_guthaben(double aktuelles_guthaben) {
+		this.aktuelles_guthaben = aktuelles_guthaben;
+	}
+	
+	
+
+	public void baueEbene (int preis, int n) {
+		Bauebenen.add(Bauebenen);
+		aktuelles_guthaben = -aktuelles_guthaben;
+	}
+		
+	
+	
+}
