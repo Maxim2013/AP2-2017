@@ -1,0 +1,90 @@
+package App;
+
+import java.util.*;
+
+public class Bauwerk {
+	
+	private int slots;
+	private int alter;
+	private int kosten;
+	private String name;
+	private ArrayList<Bauwerk> bauwerke = new ArrayList<Bauwerk>();
+	
+	// konstructor
+	
+	
+	
+	// Methoden
+	
+	public ArrayList<Bauwerk> getBauwerke() {
+		return bauwerke;
+	}
+
+	public int getSlots() {
+		return slots;
+	}
+
+	public void setSlots(int slots) {
+		this.slots = slots;
+	}
+
+	public int getAlter() {
+		return alter;
+	}
+
+	public void setAlter(int alter) {
+		this.alter = alter;
+	}
+
+	public int getKosten() {
+		return kosten;
+	}
+
+	public void setKosten(int kosten) {
+		this.kosten = kosten;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setBauwerke(ArrayList<Bauwerk> bauwerke) {
+		this.bauwerke = bauwerke;
+	}
+
+	public int benoetigteSlots( int slots ){
+		return slots;
+	}
+	
+	public int getEinahmen(int einahmen ){
+		return einahmen;
+	}
+	
+	public int getAusgaben( int kosten){
+		return kosten;
+	}
+	
+	public int getEinwohner() {
+		int einwohner = 0;
+		
+		for ( Bauwerk b: bauwerke) {
+			einwohner += b.getEinwohner();
+		}
+		return einwohner;
+	}
+	
+	
+	
+	public int getLebensqualität( int lebensquali ){
+		return lebensquali;
+	}
+	
+	public String zeichnung( String zeichnung ){
+		return zeichnung;
+	}
+	
+}
